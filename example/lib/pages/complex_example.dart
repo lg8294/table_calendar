@@ -224,7 +224,7 @@ class _CalendarHeader extends StatelessWidget {
         children: [
           const SizedBox(width: 16.0),
           SizedBox(
-            width: 120.0,
+            width: 130.0,
             child: Text(
               headerText,
               style: const TextStyle(fontSize: 26.0),
