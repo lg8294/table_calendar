@@ -32,7 +32,7 @@ Add the following line to `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  table_calendar: ^3.2.0
+  table_calendar: ^3.2.1
 ```
 
 ### Basic setup
@@ -40,6 +40,7 @@ dependencies:
 *The complete example is available [here](https://github.com/aleksanderwozniak/table_calendar/blob/master/example/lib/pages/basics_example.dart).*
 
 **TableCalendar** requires you to provide `firstDay`, `lastDay` and `focusedDay`:
+
 * `firstDay` is the first available day for the calendar. Users will not be able to access days before it.
 * `lastDay` is the last available day for the calendar. Users will not be able to access days after it.
 * `focusedDay` is the currently targeted day. Use this property to determine which month should be currently visible.
@@ -119,7 +120,7 @@ List<Event> _getEventsForDay(DateTime day) {
 }
 ```
 
-One thing worth remembering is that `DateTime` objects consist of both date and time parts. In many cases this time part is redundant for calendar related aspects. 
+One thing worth remembering is that `DateTime` objects consist of both date and time parts. In many cases this time part is redundant for calendar related aspects.
 
 If you decide to use a `Map`, I suggest making it a `LinkedHashMap` - this will allow you to override equality comparison for two `DateTime` objects, comparing them just by their date parts:
 
@@ -187,7 +188,7 @@ calendarBuilders: CalendarBuilders(
 
 ### Locale
 
-To display the calendar in desired language, use `locale` property. 
+To display the calendar in desired language, use `locale` property.
 If you don't specify it, a default locale will be used.
 
 #### Initialization
@@ -195,6 +196,7 @@ If you don't specify it, a default locale will be used.
 Before you can use a locale, you might need to initialize date formatting.
 
 A simple way of doing it is as follows:
+
 * First of all, add [intl](https://pub.dev/packages/intl) package to your pubspec.yaml file
 * Then make modifications to your `main()`:
 

@@ -1,3 +1,8 @@
+## [3.2.1]
+
+* Upgraded Android and iOS build config for the example project
+* Adjusted header layout in complex_example
+
 ## [3.2.0]
 
 * Added loadEventsForDisabledDays property to enable loading events for disabled days as well
@@ -214,7 +219,7 @@
 
 * Added programmatic selectedDay
 * Removed onFormatChanged callback - it is now integrated into onVisibleDaysChanged callback
-* Improved onVisibleDaysChanged behavior 
+* Improved onVisibleDaysChanged behavior
 * Fixed issue with empty Calendar row
 * Changed default FormatButton texts
 * Updated example project
